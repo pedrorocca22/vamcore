@@ -25,3 +25,8 @@ config.json
 # Interfaz
 frontend/node_modules/
 frontend/dist/
+
+# Vídeo promocional: datos y renders generados
+promo/data*/
+promo/out/
+promo/*.log

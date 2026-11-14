@@ -1,0 +1,39 @@
+{
+  "name": "APTUM Editorial",
+  "width": 1920,
+  "height": 1080,
+  "visual_width": 1190,
+  "text_x": 1258,
+  "right_margin": 76,
+  "palette": {
+    "background": "#EEF2F3",
+    "ink": "#102633",
+    "muted": "#3C535E",
+    "subtle": "#526973",
+    "rule": "#D2DFE1",
+    "accent": "#225B7A",
+    "teal": "#63B3AF",
+    "mint": "#A9D8D1",
+    "white": "#FFFFFF"
+  },
+  "fonts": {
+    "display": "Newsreader.ttf",
+    "body": "LibreFranklin.ttf",
+    "mono": "IBMPlexMono-Regular.ttf"
+  },
+  "font_sizes": {
+    "title": 58,
+    "body": 27,
+    "label": 21,
+    "metric": 96,
+    "caption": 22
+  },
+  "defaults": {
+    "fps": 24,
+    "preview_fps": 3,
+    "language": "en",
+    "audio": false,
+    "closing_seconds": 4,
+    "full_opening_on_first_frame": true
+  }
+}

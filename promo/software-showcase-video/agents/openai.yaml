@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software Showcase Video"
+  short_description: "Vídeos de software con estilo editorial APTUM"
+  default_prompt: "Usa $software-showcase-video para crear un vídeo comercial de este software con resultados reales y el estilo editorial APTUM."
