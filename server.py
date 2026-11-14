@@ -1,5 +1,5 @@
 """
-VAM Studio — Backend API
+VAMCORE — API local
 uvicorn server:app --host 127.0.0.1 --port 8000 --reload
 """
 
@@ -40,7 +40,7 @@ TMP_JOBS_DIR = BASE_DIR / "tmp_jobs"
 if TMP_JOBS_DIR.exists(): shutil.rmtree(TMP_JOBS_DIR)  # Limpiar al arranque
 TMP_JOBS_DIR.mkdir(exist_ok=True)
 
-app = FastAPI(title="VAM Studio API")
+app = FastAPI(title="VAMCORE API")
 
 # Habilitar CORS para React (restringido a frontend local por seguridad). Cualquier puerto local: Vite se mueve a
 # 5174, 5175… si el 5173 está ocupado por otra aplicación, y el backend solo escucha en 127.0.0.1.
@@ -429,7 +429,7 @@ async def get_library():
         if not res_path.exists(): continue
         
         try:
-            # VAM Studio espera un "summary" con métricas para mostrar en la lista
+            # La interfaz espera un "summary" con métricas para mostrar en la lista
             with open(res_path, 'r', encoding='utf-8') as f:
                 raw = f.read()
                 # Limpiar NaNs/Infs que Python json no aguanta bien en modo estándar

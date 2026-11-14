@@ -1,8 +1,8 @@
-# Entorno conda de VAM Studio.
+# Entorno conda de VAMCORE.
 #   conda env create -f environment.yml
-#   conda activate vamstudio
+#   conda activate vamcore
 #   pip install -e ".[app]"
-name: vamstudio
+name: vamcore
 channels:
   - conda-forge
 dependencies:

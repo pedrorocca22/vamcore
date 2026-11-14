@@ -1,4 +1,4 @@
-"""vamcore — motor propio de VAM Studio (docs/MIGRACION.md). GPL-3.0.
+"""vamcore — motor de VAMCORE (docs/MIGRACION.md). GPL-3.0.
 
 Importar ``vamcore`` no carga torch; no depende de ASTRA ni de VAMToolbox. Los módulos aceptan arrays de
 NumPy y, cuando torch está instalado, también ``torch.Tensor`` (se opera en el dispositivo del tensor).

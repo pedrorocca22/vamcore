@@ -1,7 +1,7 @@
 """
 vamcore.pipeline — de un STL a la pila de imágenes del proyector (antes cal_core.py)
 ====================================================================================
-Orquesta todo el proceso de VAM Studio con el motor propio (sin VAMToolbox ni ASTRA):
+Orquesta todo el proceso de VAMCORE:
 
   orientar → voxelizar (por secciones, ocupación parcial) → d_h (EDT) → CAL en PyTorch con el proyector Prisma
   (absorción de la resina y refracción del vial dentro del modelo) → métricas (banda de guarda) → tolerancia de

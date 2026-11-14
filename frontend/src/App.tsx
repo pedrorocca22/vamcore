@@ -1595,7 +1595,7 @@ export default function App() {
       }}>
         <div style={{ display:"flex", alignItems:"center", gap:7 }}>
           <div style={{ width:7, height:7, borderRadius:"50%", background:"#2563eb" }} />
-          <span style={{ fontSize:13, fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", color:"#0f172a" }}>VAM Studio</span>
+          <span style={{ fontSize:13, fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", color:"#0f172a" }}>VAMCORE</span>
         </div>
         <div style={{ display:"flex", gap:2, marginLeft:14 }}>
           {(["optimizer","library"] as const).map(v => (
@@ -1771,7 +1771,7 @@ export default function App() {
           <div style={{ height:TOP_H, display:"flex", alignItems:"center", gap:12, padding:"0 20px", background:"#fff", borderBottom:"1px solid #e2e8f0", boxShadow:"0 1px 3px rgba(0,0,0,0.04)", flexShrink:0 }}>
             <div style={{ display:"flex", alignItems:"center", gap:7 }}>
               <div style={{ width:7, height:7, borderRadius:"50%", background:"#2563eb" }} />
-              <span style={{ fontSize:13, fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", color:"#0f172a" }}>VAM Studio</span>
+              <span style={{ fontSize:13, fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", color:"#0f172a" }}>VAMCORE</span>
             </div>
             <div style={{ display:"flex", gap:2, marginLeft:14 }}>
               {(["optimizer","library"] as const).map(v => (

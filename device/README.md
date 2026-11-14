@@ -1,7 +1,7 @@
 # device/ — software del projector
 
 Se ejecuta en el controlador del projector (Raspberry Pi con el DLPC1438 y la placa del motor con Klipper), no en el
-PC. VAM Studio le envía la pila de fotogramas por HTTP y el projector la reproduce sincronizada con el giro del vial.
+PC. VAMCORE le envía la pila de fotogramas por HTTP y el projector la reproduce sincronizada con el giro del vial.
 
 | Archivo | Qué hace |
 |---|---|

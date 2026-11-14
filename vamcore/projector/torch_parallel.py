@@ -1,4 +1,4 @@
-"""Prisma — proyector de haz paralelo propio de VAM Studio en PyTorch (docs/MIGRACION.md F6).
+"""Prisma — proyector de haz paralelo propio de VAMCORE en PyTorch (docs/MIGRACION.md F6).
 
 Geometría: el rayo del ángulo φ va en la dirección r = (sin φ, −cos φ, 0) y el eje del detector es d = (cos φ, sin φ, 0)
 (convención «parallel3d» heredada de ASTRA; de ella depende el signo de la corrección del vial). Rayos paralelos y
