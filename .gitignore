@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+# Salidas de ejecución
+salida*/
+out/
+# Referencias doradas regeneradas o grandes (las de 64 sí se versionan)
+tests/golden/regenerated/
+tests/golden/large/
+
+# Aplicación: datos de ejecución y configuración local (credenciales)
+uploads/
+jobs/
+tmp_jobs/
+library/
+cm4_ip_cache.json
+config.json
+# Interfaz
+frontend/node_modules/
+frontend/dist/

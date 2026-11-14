@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vamcore"
+version = "0.2.0"
+description = "VAM Studio: impresión volumétrica tomográfica (CAL) con motor propio en PyTorch, API local e interfaz web"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "Pedro Rocca" }]
+keywords = ["volumetric additive manufacturing", "computed axial lithography", "tomography", "bioprinting", "pytorch"]
+# PyTorch con CUDA si hay GPU NVIDIA (pip install torch --index-url https://download.pytorch.org/whl/cu124);
+# sin GPU funciona en CPU (lento).
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "trimesh>=4.4",
+    "torch>=2.1",
+    "matplotlib>=3.8",              # imágenes de diagnóstico
+    "pillow>=10",                   # fotogramas PNG
+    "opencv-python-headless>=4.9",  # reescalado de fotogramas a la escala física del proyector
+]
+
+[project.optional-dependencies]
+# Aplicación: API local (server.py) que usa la interfaz web, y comunicación con el projector
+app = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "python-multipart>=0.0.9",
+    "requests>=2.31",
+]
+# Herramientas para subir y arrancar el software del projector por SSH (upload_to_projector.py, start_projector_server.py)
+device = ["paramiko>=3.4"]
+test = ["pytest>=8", "httpx>=0.27"]
+
+[project.scripts]
+vamcore = "vamcore.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["vamcore", "vamcore.*"]
+
+[tool.setuptools.package-data]
+"vamcore.resources" = ["*.stl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

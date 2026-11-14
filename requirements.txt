@@ -1,0 +1,16 @@
+# VAM Studio: dependencias de ejecución (motor + API). Equivale a `pip install -e .[app]`.
+# PyTorch con CUDA si hay GPU NVIDIA:  pip install torch --index-url https://download.pytorch.org/whl/cu124
+# Sin GPU funciona en CPU (lento).
+numpy>=1.26
+scipy>=1.11                    # EDT para d_h; Nelder-Mead de la auto-orientación
+trimesh>=4.4                   # mallas: orientación, voxelizador por secciones
+torch>=2.1                     # CAL, proyector Prisma, absorción y vial dentro del modelo
+matplotlib>=3.8                # imágenes de diagnóstico
+pillow>=10
+opencv-python-headless>=4.9    # reescalado de fotogramas a la escala física del proyector
+
+# API local y comunicación con el projector
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+requests>=2.31
