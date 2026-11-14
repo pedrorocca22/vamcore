@@ -16,7 +16,7 @@ def axis_angle_to_z(v_rot):
     # eje principal de la nube de puntos (cilindro largo) frente a Z
     w = v_rot - v_rot.mean(axis=0)
     _, _, vt = np.linalg.svd(w, full_matrices=False)
-    return np.degrees(np.arccos(abs(vt[0][2])))
+    return np.degrees(np.arccos(np.clip(abs(vt[0][2]), 0.0, 1.0)))  # el redondeo puede dar 1 + ε → NaN
 
 
 @pytest.mark.parametrize("deg,axis", [(35, (1, 0, 0)), (-50, (0, 1, 0)), (25, (1, 1, 0))])
